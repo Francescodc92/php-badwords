@@ -1,6 +1,6 @@
 > Esercizio PHP Badwords
 
-## Riprodurre il layout proposto solo in versione Desktop
+## PHP Badwords
 
 - DESCRIZIONE:
   - Creare un form PHP che permetta di inviare due campi: un    paragrafo ed una parola da censurare.

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,17 @@
   <title>PHP Badwords</title>
 </head>
 <body>
-  <h1>
-    hello
-  </h1>
+  <div class="form-wrapper">
+    <h1>
+      PHP Badwords
+    </h1>
+    <form action="./badwords.php" method="post">
+      <label for="paragraf">Testo da censurare</label>
+      <input type="text" name="paragraf" id="paragraf">
+      <label for="badword">parola da censurare</label>
+      <input type="text" name="badword" id="badword">
+      <input type="submit" value="Censura">
+    </form>
+  </div>
 </body>
 </html>
