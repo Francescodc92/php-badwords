@@ -1,7 +1,7 @@
 <?php 
   $paragraf = $_POST['paragraf'] ?? '';
   $badword = $_POST['badword'] ?? '';
-  $paragrafCensurate = str_replace($badword,"***", $paragraf);
+  $paragrafCensurate = str_ireplace($badword,"***", $paragraf);
 ?>
 
 
