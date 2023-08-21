@@ -9,6 +9,7 @@ body{
   background: rgb(109,4,161);
   background: linear-gradient(180deg, rgba(109,4,161,1) 18%, rgba(94,10,228,1) 86%);;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 h1{
@@ -16,19 +17,27 @@ h1{
   margin-block: 20px;
 }
 
-.form-wrapper{
+.form-wrapper,
+.result-wrapper{
   max-width: 400px;
   margin: 50px auto;
   padding:30px;
   border: 1px solid #ccc;
   border-radius: 20px;
   background: rgb(4,84,161);
-  background: linear-gradient(180deg, rgba(4,84,161,1) 18%, rgba(10,227,228,1) 86%);
+  background: linear-gradient(180deg, rgba(4,84,161,1) 18%, rgb(5, 148, 148) 86%);
 }
+
+.result-wrapper{
+  max-width: 600px;
+  color: #fff;
+}
+
 .form-wrapper form{
   display: flex;
   flex-direction: column;
 }
+
 .form-wrapper form label{
   margin-block: 10px;
   text-transform: capitalize;
@@ -53,4 +62,8 @@ h1{
 .form-wrapper form input[type="submit"]:hover{
   background-color: rgb(0, 110, 255);
   color: #fff;
+}
+
+p{
+  margin-block: 10px;
 }
