@@ -1,7 +1,7 @@
 <?php 
-  $paragraf = $_POST['paragraf'] ?? '';
+  $paragraph = $_POST['paragraph'] ?? '';
   $badword = $_POST['badword'] ?? '';
-  $paragrafCensurate = str_ireplace($badword,"***", $paragraf);
+  $paragraphCensurate = str_ireplace($badword,"***", $paragraph);
 ?>
 
 
@@ -18,30 +18,31 @@
   <div class="result-wrapper">
     <h2>Testo senza censura</h2>
     <p>
-      <?= $paragraf ?>
+      <?= $paragraph ?>
     </p>
     <?php 
       echo '<p class="lenght-p">
       lungezza testo:
         <strong>'
-          .strlen($paragraf).'
+          .strlen($paragraph).'
         </strong>
-      </p>'
+      </p>;'
     ?>
     <h2>
       Testo censurato
     </h2>
     <p>
-      <?= $paragrafCensurate ?>
+      <?= $paragraphCensurate ?>
     </p>
     <?php 
       echo '<p class="lenght-p">
       lungezza testo censurato:
         <strong>'
-          .strlen($paragrafCensurate).'
+          .strlen($paragraphCensurate).'
         </strong>
       </p>'
     ?>
+    <button class="button" onclick="javascript:history.go(-1)">Go Back</button>
   </div>
 </body>
 </html>
